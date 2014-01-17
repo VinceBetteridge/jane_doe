@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jane Doe</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+	<link rel="stylesheet" href="http://cachedcommons.org/cache/960/0.0.0/stylesheets/960.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div id="content">
-		<div id="navContainer">
-			<nav id="topNav">
-				<ul>
-					<li><a href="#">Top</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
+		<nav id="nav">
+			<ul class="clearfix">
+				<li><a href="#">Top</a></li>
+				<li><a href="#">Work</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
 		<div id="intro">
 			<div id="portraitContainer">
 				<img id="portrait" src="img/me.jpg" alt="portrait">
@@ -34,18 +34,18 @@
 				<h2>I design and build amazing things.</h2>
 				<p>Here is some latin for you to wonder about.</p>
 			</article>
-			<div id="boxWrapperWork">
-				<div class="boxWork">
+			<div id="work-container">
+				<div class="work-item">
 					<img src="" alt="">
 					<h3>Project 1</h3>
 					<p>Text talking about project one.</p>
 				</div>
-				<div class="boxWork">
+				<div class="work-item">
 					<img src="" alt="">
 					<h3>Project 2</h3>
 					<p>Text talking about project two.</p>
 				</div>
-				<div class="boxWork">
+				<div class="work-item">
 					<img src="" alt="">
 					<h3>Project 3</h3>
 					<p>Text talking about project three.</p>
@@ -58,39 +58,62 @@
 		<div id="portfolio">
 			<article>
 				<h2>Awesome work makes happy clients</h2>
-				<p></p>
+				<p>Proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore feugiat lorem ipsum dolore.</p>
 			</article>
-			<div id="boxWrapperPortfolio">
-				<div class="boxPortfolio">
-					<img src="" alt="">
-					<h3>Portfolio 1</h3>
+			<div id="portfolio-container">
+				<div class="portfolio-item">
+					<img src="img/portfolio01.jpg" alt="">
+					<h3><a href="#">Portfolio 1</a></h3>
 					<p>Text talking about piece one.</p>
 				</div>
-				<div class="boxPortfolio">
-					<img src="" alt="">
-					<h3>Portfolio 2</h3>
+				<div class="portfolio-item">
+					<img src="img/portfolio02.jpg" alt="">
+					<h3><a href="#">Portfolio 2</a></h3>
 					<p>Text talking about piece two.</p>
 				</div>
-				<div class="boxPortfolio">
-					<img src="" alt="">
-					<h3>Portfolio 3</h3>
+				<div class="portfolio-item">
+					<img src="img/portfolio03.jpg" alt="">
+					<h3><a href="#">Portfolio 3</a></h3>
 					<p>Text talking about piece three.</p>
 				</div>
-				<div class="boxPortfolio">
-					<img src="" alt="">
-					<h3>Portfolio 4</h3>
+				<div class="portfolio-item">
+					<img src="img/portfolio04.jpg" alt="">
+					<h3><a href="#">Portfolio 4</a></h3>
 					<p>Text talking about piece four.</p>
 				</div>
-				<div class="boxPortfolio">
-					<img src="" alt="">
-					<h3>Portfolio 5</h3>
+				<div class="portfolio-item">
+					<img src="img/portfolio05.jpg" alt="">
+					<h3><a href="#">Portfolio 5</a></h3>
 					<p>Text talking about piece five.</p>
 				</div>
-				<div class="boxPortfolio">
-					<img src="" alt="">
-					<h3>Portfolio 6</h3>
+				<div class="portfolio-item">
+					<img src="img/portfolio06.jpg" alt="">
+					<h3><a href="#">Portfolio 6</a></h3>
 					<p>Text talking about piece six.</p>
 				</div>
+				<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+				<a href="#" class="btn">Get in touch with me</a>
+			</div>
+		</div>
+		<div id='contact'>
+			<header>
+				<h2>Want to hire me? Get in touch!</h2>
+				<p>Ornare nulla proin odio consequat sapien vestibulum ipsum sed lorem.</p>
+			</header>
+			<div>
+				<div>
+					<div id='name'>
+						<form action="">
+							
+						</form>
+					</div>
+					<div id='email'>
+						
+					</div>
+				</div>
+				<div id='subjet'></div>
+				<div id='message'></div>
+				<div id='submit'></div>
 			</div>
 		</div>
 	</div>

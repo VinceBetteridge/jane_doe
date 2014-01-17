@@ -2,17 +2,36 @@ body{
 	margin: 0 auto;
 	width: 100%;
 	max-width: 960px;
-	font: 100% Georgia, Times, serif;
+	font: 100% 'Open Sans', sans-serif;
 	font-weight: normal;
 }
 #content{
 }
-#navContainer{
+#nav{
+	background: #282828;
 	display: block;
-	margin: 0 auto;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
-#topNav{
+#nav ul{
+	margin: 0 auto;
+	width: 36%;
+}
+#nav ul li{
+	display: block;
+	float: left;
+	height: auto;
+	margin:.5em;
+	text-align: center;
 	width: auto;
+}
+#nav ul li a{
+	padding: .5em;
+	color: white;
+	display:block;
+	text-decoration: none;
 }
 #intro{
 	width: 960px;
@@ -24,6 +43,7 @@ body{
 #work{
 
 }
+.clear{clear:both;}
 
 .btn{
 	margin:2em;
@@ -55,11 +75,35 @@ body{
 	transition: background-color .2s ease-in-out;
 }
 
-.boxWork{
+.work-item{
 	width: 12em;
 	height: auto;
 	margin: 0 auto;
 	padding: 1em;
 	box-shadow: 0px 0px 0px 3px #162951 inset;
 	/*float: left;*/
+}
+.portfolio-item{
+	width: 12em;
+	height: auto;
+	margin: 0 auto;
+	padding: 1em;
+	box-shadow: 0px 0px 0px 3px #162951 inset;
+	/*float: left;*/
+}
+
+/* clearfix */
+
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
 }
