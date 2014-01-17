@@ -9,7 +9,6 @@ body{
 }
 #nav{
 	background: #282828;
-	display: block;
 	left: 0;
 	position: fixed;
 	top: 0;
@@ -20,8 +19,7 @@ body{
 	width: 36%;
 }
 #nav ul li{
-	display: block;
-	float: left;
+	display: inline-block;
 	height: auto;
 	margin:.5em;
 	text-align: center;
