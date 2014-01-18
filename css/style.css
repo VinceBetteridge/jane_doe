@@ -12,15 +12,32 @@ h1 {
 }
 h2 {
 	font-weight: 700;
-	font-size: 2em;
+	font-size: 1.6em;
 	color: #333333;
 	letter-spacing: -0.025em;
 	text-align: center;
+	margin-bottom: 0.25em;
 }
-a {
-	color: #333333;
+h3{
+	margin-bottom: 0.25em;
+	font-size: 1.5em;
+	font-weight: 700;
+	padding-top: 1em;
+}
+p {
+	font-size: 1.25em;
+}
+
+span {
+	font-size: 1em;
+	color: #888;
+	display: block;
+}
+header {
+margin: 0 0 3em 0;
 }
 strong {
+	color: #333;
 	font-weight: 700;
 }
 #content{
@@ -65,6 +82,9 @@ strong {
 #intro p {
 	font-size: 1.5em;
 	line-height: 1.75em;
+	color: #888;
+}
+#intro .link {
 	color: #333333;
 }
 #portrait{
@@ -72,12 +92,6 @@ strong {
 	float: left;
 }
 #about{
-}
-#work{
-	padding-top: 4em;
-	padding-bottom: 4em;
-	width: 960px;
-	margin: 0 auto;
 }
 #contact header h2{
 	color: white;
@@ -90,6 +104,13 @@ strong {
 	background-color: #303030;
 	color: #999;
 	text-shadow: -1px -1px 0px #181818;
+}
+.center{
+	text-align: center;
+}
+.center-margin{
+	margin-right: auto;
+	margin-left: auto;
 }
 .shadow{
 	margin: 0;
@@ -127,21 +148,61 @@ strong {
 	-ms-transition: background-color .2s ease-in-out;
 	transition: background-color .2s ease-in-out;
 }
-.work-item{
-	width: 12em;
-	height: auto;
+#work{
+	padding-top: 4em;
+	padding-bottom: 4em;
+	width: 960px;
 	margin: 0 auto;
-	padding: 1em;
-	box-shadow: 0px 0px 0px 3px #162951 inset;
 }
-.portfolio-item{
-	width: 12em;
-	height: auto;
-	margin: 0 auto;
-	padding: 1em;
-	box-shadow: 0px 0px 0px 3px #162951 inset;
+#work-items {
+	margin-bottom: 3em;
 }
-
+#work-items p{
+	font-size: 1em;
+	color: #888;
+}
+#work-items .box p{
+	font-size: 0.9em;
+	color: #888;
+}
+#work-items .box {
+	width: 235px;
+	background: #fff;
+	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.15), 0px 2px 3px 0px rgba(0,0,0,0.1);
+	text-align: center;
+	padding: 2em 2em 2.5em 2em;
+}
+#work-items .box .fa {
+	color: #EA8A95;
+}
+#work-items .box h3 {
+	margin-bottom: 0.25em;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+#portfolio{
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+#portfolio-items .box {
+width: 300px;
+background: #fff;
+box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.15), 0px 2px 3px 0px rgba(0,0,0,0.1);
+text-align: center;
+padding: 0em 0em 1.5em 0em;
+margin-bottom: 2.5em;
+}
+#portfolio-items .box p {
+	font-size: 0.9em;
+	color: #888;
+}
+#portfolio-items .box a {
+	color: #333;
+	text-decoration: none;
+}
+#portfolio-items .box a:hover {
+	color: #3B95C6;
+}
 /* clearfix */
 
 /* For modern browsers */
