@@ -112,19 +112,16 @@
 				<span>Ornare nulla proin odio consequat sapien vestibulum ipsum sed lorem.</span>
 			</header>
 			<div>
-				<div>
-					<div id='name'>
-						<form action="">
-							
-						</form>
-					</div>
-					<div id='email'>
-						
-					</div>
-				</div>
-				<div id='subjet'></div>
-				<div id='message'></div>
-				<div id='submit'></div>
+					<form class="container_12 clearfix" action="">
+						<input type="text" name="name" class="grid_6" placeholder="Name">
+						<input type="email" name="email" pattern="^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" class="grid_6" placeholder="Email">
+						<input type="text" name="subject" class="grid_12" placeholder="Subject">
+						<textarea name="message" class="grid_12" id="message"></textarea>
+						<div class="center">
+							<input type="submit" name="submit" value="submit" class="btn">
+							<input type="reset" name="reset" value="reset" class="btn">
+						</div>
+					</form>
 			</div>
 		</div>
 	</div>
