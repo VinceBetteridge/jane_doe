@@ -1,13 +1,32 @@
 body{
 	margin: 0 auto;
 	width: 100%;
-	max-width: 960px;
 	font: 100% 'Open Sans', sans-serif;
 	font-weight: normal;
+}
+h1 {
+	font-weight: 300;
+	font-size: 3em;
+	color: #333333;
+	letter-spacing: -0.025em;
+}
+h2 {
+	font-weight: 700;
+	font-size: 2em;
+	color: #333333;
+	letter-spacing: -0.025em;
+	text-align: center;
+}
+a {
+	color: #333333;
+}
+strong {
+	font-weight: 700;
 }
 #content{
 }
 #nav{
+	z-index: 1000;
 	background: #282828;
 	left: 0;
 	position: fixed;
@@ -16,7 +35,7 @@ body{
 }
 #nav ul{
 	margin: 0 auto;
-	width: 36%;
+	width: 22em;
 }
 #nav ul li{
 	display: inline-block;
@@ -30,21 +49,57 @@ body{
 	color: white;
 	display:block;
 	text-decoration: none;
+	font-size: 95%;
+	font-weight: 600;
+}
+#nav ul li a:hover{
+	background: #333333;
+	border-radius: .2em;
 }
 #intro{
+	padding-top: 12em;
+	padding-bottom: 4em;
 	width: 960px;
 	margin: 0 auto;
 }
+#intro p {
+	font-size: 1.5em;
+	line-height: 1.75em;
+	color: #333333;
+}
+#portrait{
+	border-radius: 40em;
+	float: left;
+}
 #about{
-
 }
 #work{
-
+	padding-top: 4em;
+	padding-bottom: 4em;
+	width: 960px;
+	margin: 0 auto;
 }
-.clear{clear:both;}
-
+#contact header h2{
+	color: white;
+}
+#shadow-style1{
+	background-color: #f4f4f4;
+	text-shadow: 1px 1px 0px #fff;
+}
+#shadow-style2{
+	background-color: #303030;
+	color: #999;
+	text-shadow: -1px -1px 0px #181818;
+}
+.shadow{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-image: url('images/bg.png');
+	box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
+}
 .btn{
-	margin:2em;
+	margin-top:2em;
 	padding:1em 2.35em 1em 2.35em;
 	-webkit-border-radius: 12px;
 	border-radius: 12px;
@@ -72,14 +127,12 @@ body{
 	-ms-transition: background-color .2s ease-in-out;
 	transition: background-color .2s ease-in-out;
 }
-
 .work-item{
 	width: 12em;
 	height: auto;
 	margin: 0 auto;
 	padding: 1em;
 	box-shadow: 0px 0px 0px 3px #162951 inset;
-	/*float: left;*/
 }
 .portfolio-item{
 	width: 12em;
@@ -87,7 +140,6 @@ body{
 	margin: 0 auto;
 	padding: 1em;
 	box-shadow: 0px 0px 0px 3px #162951 inset;
-	/*float: left;*/
 }
 
 /* clearfix */

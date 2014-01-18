@@ -3,32 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jane Doe</title>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 	<link rel="stylesheet" href="http://cachedcommons.org/cache/960/0.0.0/stylesheets/960.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div id="content">
-		<nav id="nav">
-			<ul class="clearfix">
-				<li><a href="#">Top</a></li>
-				<li><a href="#">Work</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-		<div id="intro">
-			<div id="portraitContainer">
-				<img id="portrait" src="img/me.jpg" alt="portrait">
-			</div>
-			<article id="about">
-				<h1>
-					Hi. I'm <strong>Jane Doe</strong>.
-				</h1>
-				<p>And this is <strong>Miniport</strong>, a free, fully responsive site template designed by <a href="#">AJ</a> for <a href="#">HTML5 UP</a> & released under the <a href="#">CCA license</a>.</p>
-				<a href="#" class="btn">Learn about what I do</a>
-			</article>
+	<nav id="nav">
+		<ul class="clearfix">
+			<li><a href="#">Top</a></li>
+			<li><a href="#">Work</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<div id="intro" class="container_12 clearfix">
+		<div id="portraitContainer" class="grid_4">
+			<img width="300" id="portrait" src="img/me.jpg" alt="portrait">
 		</div>
+		<article id="about" class="grid_8">
+			<h1>
+				Hi. I'm <strong>Jane Doe</strong>.
+			</h1>
+			<p>And this is <strong>Miniport</strong>, a free, fully responsive site template designed by <a href="#">AJ</a> for <a href="#">HTML5 UP</a> & released under the <a href="#">CCA license</a>.</p>
+			<a href="#" class="btn">Learn about what I do</a>
+		</article>
+	</div>
+	<div class="shadow">
 		<div id="work">
 			<article>
 				<h2>I design and build amazing things.</h2>
@@ -50,11 +51,14 @@
 					<h3>Project 3</h3>
 					<p>Text talking about project three.</p>
 				</div>
+			</div>
 			<div>
 				<p>Here is some latin for you to wonder about.</p>
 				<a href="#" class="btn">See some of my recent work</a>
 			</div>
 		</div>
+	</div>
+	<div id="shadow-style1" class="shadow">
 		<div id="portfolio">
 			<article>
 				<h2>Awesome work makes happy clients</h2>
@@ -95,6 +99,8 @@
 				<a href="#" class="btn">Get in touch with me</a>
 			</div>
 		</div>
+	</div>
+	<div id="shadow-style2" class="shadow">
 		<div id='contact'>
 			<header>
 				<h2>Want to hire me? Get in touch!</h2>
